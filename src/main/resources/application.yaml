@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: healthch
+  datasource:
+    url: jdbc:postgresql://localhost:5432/healthch
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
