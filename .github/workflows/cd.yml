@@ -1,6 +1,7 @@
 name: CD (Release & Publish)
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
