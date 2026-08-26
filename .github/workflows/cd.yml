@@ -43,4 +43,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/healthch:${{ github.sha }}
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/healthch:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/healthch:latest
