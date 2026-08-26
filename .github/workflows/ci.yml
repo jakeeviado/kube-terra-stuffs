@@ -4,7 +4,6 @@ name: CI (Pull Request Validation)
 
 on:
   pull_request:
-    branches: [master]
 
 permissions:
   contents: read
