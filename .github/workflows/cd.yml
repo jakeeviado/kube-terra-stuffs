@@ -1,11 +1,10 @@
-# Continuous Deployment pipeline that runs in the master branch, skipping redundant tests since it is already
-# validated in ci.yml pipeline. With permissions fot container publishing
-
 name: CD (Release & Publish)
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
 
 permissions:
   contents: read

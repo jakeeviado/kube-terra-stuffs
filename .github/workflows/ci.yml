@@ -1,10 +1,10 @@
-# Continuous Integration pipeline is responsible for validating builds and tests for every merge/pull requests
-
 name: CI (Pull Request Validation)
 
 on:
+  workflow_dispatch:
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
 
 permissions:
   contents: read
