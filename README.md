@@ -47,14 +47,6 @@ flowchart LR
     Phase3 --> Phase4
     Phase4 --> Phase5
 
-    %% Styling
-    style VCS fill:#1e1e2e,stroke:#89b4fa,color:#cdd6f4
-    style Phase1 fill:#181825,stroke:#b4befe,color:#cdd6f4
-    style Phase2 fill:#181825,stroke:#f9e2af,color:#cdd6f4
-    style Phase3 fill:#181825,stroke:#f38ba8,color:#cdd6f4
-    style Phase4 fill:#181825,stroke:#a6e3a1,color:#cdd6f4
-    style Phase5 fill:#181825,stroke:#cba6f7,color:#cdd6f4
-
 ```
 
 
