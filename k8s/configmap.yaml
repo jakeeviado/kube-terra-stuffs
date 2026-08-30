@@ -1,0 +1,12 @@
+# centralizes all application configuration and connection strings
+# injects configs to resources/application-k8s.yaml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: healthch-config
+data:
+  SPRING_PROFILES_ACTIVE: "k8s"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres-service:5432/healthch"
+  SPRING_DATASOURCE_USERNAME: "healthch-dev"
+  SPRING_DATASOURCE_PASSWORD: "Changeme0"

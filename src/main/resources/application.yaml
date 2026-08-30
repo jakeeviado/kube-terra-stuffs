@@ -1,13 +1,8 @@
 spring:
   application:
-    name: healthch
+    name: healthch-core
   datasource:
-    url: jdbc:postgresql://localhost:5432/healthch
-    username: postgres
-    password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: none
+    driver-class-name: org.postgresql.Driver
 
 management:
   endpoints:
